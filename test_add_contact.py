@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from selenium.webdriver.firefox.webdriver import WebDriver
 import unittest
+from contact import Contact
 
 def is_alert_present(wd):
     try:
@@ -10,33 +11,42 @@ def is_alert_present(wd):
         return False
 
 class test_add_contact(unittest.TestCase):
+
     def setUp(self):
         self.wd = WebDriver()
         self.wd.implicitly_wait(60)
     
-    def test_test_add_contact(self):
+    def test_add_contact(self):
         wd = self.wd
         self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
-        self.create_contact(wd, firstname="Ann", lastname="Smith", email="asm@gmail.com")
+        self.create_contact(wd, Contact(firstname="Ann", lastname="Smith", email="asm@gmail.com"))
         self.logout(wd)
+
+    def test_add_empty_contact(self):
+        wd = self.wd
+        self.open_home_page(wd)
+        self.login(wd, username="admin", password="secret")
+        self.create_contact(wd, Contact(firstname="", lastname="", email=""))
+        self.logout(wd)
+
 
     def logout(self, wd):
         wd.find_element_by_link_text("Logout").click()
 
-    def create_contact(self, wd, firstname, lastname, email):
+    def create_contact(self, wd, contact):
         # init contact creation
         wd.find_element_by_link_text("add new").click()
         # fill contact form
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
-        wd.find_element_by_name("firstname").send_keys(firstname)
+        wd.find_element_by_name("firstname").send_keys(contact.firstname)
         wd.find_element_by_name("lastname").click()
         wd.find_element_by_name("lastname").clear()
-        wd.find_element_by_name("lastname").send_keys(lastname)
+        wd.find_element_by_name("lastname").send_keys(contact.lastname)
         wd.find_element_by_name("email").click()
         wd.find_element_by_name("email").clear()
-        wd.find_element_by_name("email").send_keys(email)
+        wd.find_element_by_name("email").send_keys(contact.email)
         # submit contact creation
         wd.find_element_by_name("submit").click()
 
