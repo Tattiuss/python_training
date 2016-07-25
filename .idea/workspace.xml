@@ -24,8 +24,8 @@
       <file leaf-file-name="test_add_group.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_add_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="364">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
               <folding>
                 <element signature="e#24#82#0" expanded="true" />
               </folding>
@@ -397,9 +397,6 @@
     <history-entry file="py_test_in_test_add_contact_py - 2016.07.24 at 20h 49m 35s.xml">
       <configuration name="py.test in test_add_contact.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_add_group_py - 2016.07.20 at 15h 07m 41s.xml">
-      <configuration name="py.test in test_add_group.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_test_add_group_py - 2016.07.22 at 15h 49m 40s.xml">
       <configuration name="py.test in test_add_group.py" configurationId="tests" />
     </history-entry>
@@ -413,6 +410,9 @@
       <configuration name="py.test in test_add_group.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_add_group_py - 2016.07.25 at 21h 58m 15s.xml">
+      <configuration name="py.test in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_add_group_py - 2016.07.25 at 22h 14m 06s.xml">
       <configuration name="py.test in test_add_group.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -713,8 +713,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test_add_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="364">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
           <folding>
             <element signature="e#24#82#0" expanded="true" />
           </folding>
