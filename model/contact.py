@@ -4,3 +4,7 @@ class Contact:
         self.firstname = firstname
         self.lastname = lastname
         self.email = email
+
+
+
+
