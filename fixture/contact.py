@@ -4,6 +4,15 @@ class ContactHelper:
     def __init__(self, app):
         self.app = app
 
+    def edit_contact(self):
+        wd = self.app.wd
+        # select contact
+        wd.find_element_by_name("selected[]").click()
+        # submit deletion
+        wd.find_element_by_xpath("//table[@id='maintable']/tbody/tr[2]/td[8]/a/img").click()
+        # submit updating
+        wd.find_element_by_name("update").click()
+
     def delete_first_contact(self):
         wd = self.app.wd
         # select first contact
