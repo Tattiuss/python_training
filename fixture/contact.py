@@ -37,3 +37,4 @@ class ContactHelper:
         wd.find_element_by_name("email").send_keys(contact.email)
         # submit contact creation
         wd.find_element_by_name("submit").click()
+
