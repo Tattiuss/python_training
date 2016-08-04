@@ -29,7 +29,6 @@ class GroupHelper:
     def edit_first_group(self):
         wd = self.app.wd
         self.open_groups_page()
-        # select first group
         self.select_first_group()
         # submit edition
         wd.find_element_by_name("edit").click()
