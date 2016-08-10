@@ -22,10 +22,13 @@ class ContactHelper:
         firstname = wd.find_element_by_name("firstname").get_attribute("value")
         lastname = wd.find_element_by_name("lastname").get_attribute("value")
         id = wd.find_element_by_name("id").get_attribute("value")
+        address = wd.find_element_by_name("address").text
         homephone = wd.find_element_by_name("home").get_attribute("value")
         mobilephone = wd.find_element_by_name("mobile").get_attribute("value")
-        return Contact(firstname=firstname, lastname=lastname, id=id,
-                   homephone=homephone, mobilephone=mobilephone)
+        email = wd.find_element_by_name("email").get_attribute("value")
+        email2 = wd.find_element_by_name("email2").get_attribute("value")
+        return Contact(firstname=firstname, lastname=lastname, id=id, address=address,
+                   homephone=homephone, mobilephone=mobilephone, email=email, email2=email2)
 
     def open_contact_to_edit_by_index(self, index):
         wd = self.app.wd
@@ -53,9 +56,11 @@ class ContactHelper:
                 firstname = cells[2].text
                 lastname = cells[1].text
                 id = cells[0].find_element_by_tag_name("input").get_attribute("value")
-                email = cells[4].text
+                address = cells[3].text
+                all_email = cells[4].text
                 all_phones = cells[5].text
-                self.contact_cache.append(Contact(firstname=firstname, lastname=lastname, id=id, email=email,
+                self.contact_cache.append(Contact(firstname=firstname, lastname=lastname, id=id, address=address,
+                                                  all_email_from_home_page=all_email,
                                                   all_phones_from_home_page=all_phones))
         return list(self.contact_cache)
 
@@ -124,9 +129,11 @@ class ContactHelper:
         wd = self.app.wd
         self.change_field_value("firstname", contact.firstname)
         self.change_field_value("lastname", contact.lastname)
+        self.change_field_value("address", contact.address)
         self.change_field_value("home", contact.homephone)
         self.change_field_value("mobile", contact.mobilephone)
         self.change_field_value("email", contact.email)
+        self.change_field_value("email2", contact.email2)
 
     def change_field_value(self, field_name, text):
         wd = self.app.wd
