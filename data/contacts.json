@@ -1,0 +1,80 @@
+[
+  {
+    "email2": "",
+    "address": "",
+    "all_phones_from_home_page": null,
+    "all_email_from_home_page": null,
+    "id": null,
+    "homephone": "",
+    "mobilephone": "",
+    "firstname": "",
+    "email": "",
+    "py/object": "model.contact.Contact",
+    "lastname": ""
+  },
+  {
+    "email2": "email2Sb1 0 SJZ F$",
+    "address": "address/yR=<Z\"+6g\\>[ozN~",
+    "all_phones_from_home_page": null,
+    "all_email_from_home_page": null,
+    "id": null,
+    "homephone": "homephone$N",
+    "mobilephone": "mobilephoner\\D  K7&D3",
+    "firstname": "firstname?xtv}3",
+    "email": "email~m7^J}+g* ~NHAUU",
+    "py/object": "model.contact.Contact",
+    "lastname": "lastnamew s#"
+  },
+  {
+    "email2": "email2l%J#",
+    "address": "addressYgJ? ",
+    "all_phones_from_home_page": null,
+    "all_email_from_home_page": null,
+    "id": null,
+    "homephone": "homephone)+\\w r",
+    "mobilephone": "mobilephoneq1|6I3G\"* ",
+    "firstname": "firstname )",
+    "email": "emailO Jw9eKh<S.GvM7-",
+    "py/object": "model.contact.Contact",
+    "lastname": "lastnamedM)"
+  },
+  {
+    "email2": "email2L>b-MI3x|",
+    "address": "address0nlf  ",
+    "all_phones_from_home_page": null,
+    "all_email_from_home_page": null,
+    "id": null,
+    "homephone": "homephonef3wC v^8=ZY",
+    "mobilephone": "mobilephoneaLiud",
+    "firstname": "firstname",
+    "email": "emailI|",
+    "py/object": "model.contact.Contact",
+    "lastname": "lastnameos#"
+  },
+  {
+    "email2": "email2A7,pF_@f ",
+    "address": "address@_1>y4uDsb id ",
+    "all_phones_from_home_page": null,
+    "all_email_from_home_page": null,
+    "id": null,
+    "homephone": "homephonecK\"~lf 9i2)",
+    "mobilephone": "mobilephone  _y.@",
+    "firstname": "firstname_'+V80  ",
+    "email": "email:jvF(%=J QrRj{E=2i",
+    "py/object": "model.contact.Contact",
+    "lastname": "lastnameqb"
+  },
+  {
+    "email2": "email2Rz",
+    "address": "address4\"HnBI",
+    "all_phones_from_home_page": null,
+    "all_email_from_home_page": null,
+    "id": null,
+    "homephone": "homephoneF  muZ.G>8",
+    "mobilephone": "mobilephone]ogh:75zTh 8k!",
+    "firstname": "firstname Y7c+D7]",
+    "email": "email!s4^A)K",
+    "py/object": "model.contact.Contact",
+    "lastname": "lastname9X,2Y=~"
+  }
+]
